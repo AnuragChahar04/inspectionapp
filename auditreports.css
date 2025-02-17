@@ -1,0 +1,82 @@
+body {
+    /* background: url('background.jpg') no-repeat center center/cover; */
+    margin: 0;
+    padding: 0;
+    margin-left: 250px;
+}
+
+.audit-reports-container {
+    width: 80%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.audit-list {
+    list-style: none;
+    padding: 0;
+}
+
+.audit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.audit-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.audit-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ongoing {
+    background: orange;
+    color: #fff;
+}
+
+.completed {
+    background: green;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+.modal-content {
+    color: #fff;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}

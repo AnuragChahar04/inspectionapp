@@ -1,0 +1,110 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button[type="Submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="Submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    button[type="Submit"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 10px;
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .input-field input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button[type="Submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
